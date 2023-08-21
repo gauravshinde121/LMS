@@ -18,8 +18,8 @@ module.exports = (sequelize, DataTypes) => {
     bookId: DataTypes.INTEGER,
     userId: DataTypes.INTEGER,
     days_issued: DataTypes.INTEGER,
-    is_retuned: DataTypes.ENUM,
-    status: DataTypes.ENUM
+    is_retuned: DataTypes.ENUM('1','0'),
+    status: DataTypes.ENUM('1','0')
   }, {
     sequelize,
     modelName: 'IssuedBooks',
